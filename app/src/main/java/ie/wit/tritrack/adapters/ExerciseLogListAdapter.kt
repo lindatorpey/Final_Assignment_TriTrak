@@ -62,8 +62,9 @@ class ExerciseLogListAdapter(
                         return@setPositiveButton
                     }
                     val time = timeStr.toInt()
-                    if (time < 1) {
-                        Toast.makeText(context, "Please enter valid time", Toast.LENGTH_SHORT).show()
+                    if (time < 1 || time > 60) {
+                        Toast.makeText(context, "Time should be between 1 and 61", Toast.LENGTH_SHORT)
+                            .show()
                         return@setPositiveButton
                     }
                     exerciseModelsList.get(clickedPosition).exerciseTime = time

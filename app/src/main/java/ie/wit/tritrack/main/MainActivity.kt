@@ -12,6 +12,7 @@ import com.google.android.material.navigation.NavigationView
 import ie.wit.tritrack.fragments.AddExerciseLogFragment
 import ie.wit.tritrack.fragments.ExerciseLogListingFragment
 import ie.wit.tritrack.R
+import ie.wit.tritrack.fragments.AboutFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -44,7 +45,6 @@ class MainActivity : AppCompatActivity() {
 
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
-        toolbar.setTitle("Add Exercise Log")
 
 
         navView.setNavigationItemSelectedListener({ menuItem ->
@@ -81,6 +81,12 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, ExerciseLogListingFragment()).commit()
             toolbar.setTitle("Exercise Log List")
             navView.setCheckedItem(R.id.nav_exercise_list)
+        }
+        if (id ==R.id.nav_about){
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, AboutFragment()).commit()
+            toolbar.setTitle("About")
+            navView.setCheckedItem(R.id.nav_about)
         }
     }
     // override the onBackPressed() function to close the Drawer when the back button is clicked

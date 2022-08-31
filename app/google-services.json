@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "704815043615",
-    "firebase_url": "https://clientsapps-e8f75.firebaseio.com",
-    "project_id": "clientsapps-e8f75",
-    "storage_bucket": "clientsapps-e8f75.appspot.com"
+    "project_number": "581402806785",
+    "project_id": "tritrack-a1a5a",
+    "storage_bucket": "tritrack-a1a5a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:704815043615:android:ac1da45ab304de80a9b12a",
+        "mobilesdk_app_id": "1:581402806785:android:d0f23ed4a2033b59154e00",
         "android_client_info": {
-          "package_name": "ie.wit.tritrack"
+          "package_name": "ie.wit.tritrack.new"
         }
       },
       "oauth_client": [
         {
-          "client_id": "704815043615-mifk8ab3pigafe973i014ijm1geqrceb.apps.googleusercontent.com",
+          "client_id": "581402806785-qh2jf5v5s2fogskvted1e16okvde7pi2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA1A_oiUpkHoxsPoBa54xV_siR76gNZvgs"
+          "current_key": "AIzaSyAehIU8tP0fmjUqZPQaUsSkg7GUaTxwEHo"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "704815043615-mifk8ab3pigafe973i014ijm1geqrceb.apps.googleusercontent.com",
+              "client_id": "581402806785-qh2jf5v5s2fogskvted1e16okvde7pi2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
