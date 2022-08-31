@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/drawable/button_background.xml" value="0.1385" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/drawable/edit_text_background.xml" value="0.1385" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/drawable/ic_menu_camera.xml" value="0.1385" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/drawable/ic_menu_gallery.xml" value="0.1385" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1385" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/drawable/side_nav_bar.xml" value="0.1385" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/app_bar_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/exercise_log_list_template.xml" value="0.1675929884566054" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/fragment_gallery.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/fragment_slideshow.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/layout_fragment_add_exercise_log.xml" value="0.16547066272688898" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/layout_fragment_exercise_log_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/layout_login_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/layout_register_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/layout/nav_header_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/menu/activity_main_action_bar.xml" value="0.16547066272688898" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidWorkspace/Fiverr/Linda/Code/app/src/main/res/menu/main_activity2.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/Assignment2Tutorial/Code_TriTrack_31aug22/Code/app/src/main/res/layout/about.xml" value="0.15476699444206926" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/Assignment2Tutorial/Code_TriTrack_31aug22/Code/app/src/main/res/menu/activity_main_action_bar.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/35386/AndroidStudioProjects/Assignment2Tutorial/Code_TriTrack_31aug22/Code/app/src/main/res/menu/activity_main_drawer.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/drawable/button_background.xml" value="0.1965" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/drawable/edit_text_background.xml" value="0.1965" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/drawable/side_nav_bar.xml" value="0.1965" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/about.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/activity_main.xml" value="0.30141085934159895" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/app_bar_main.xml" value="0.15476699444206926" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/content_main.xml" value="0.15476699444206926" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/exercise_log_list_template.xml" value="0.15476699444206926" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/layout_fragment_add_exercise_log.xml" value="0.15476699444206926" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/layout_fragment_exercise_log_list.xml" value="0.14749893116716545" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/layout_login_screen.xml" value="0.15476699444206926" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/layout_register_screen.xml" value="0.22" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/nav_header_main.xml" value="0.30141085934159895" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/layout/splashscreen.xml" value="0.15476699444206926" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/menu/activity_main_action_bar.xml" value="0.15476699444206926" />
+        <entry key="..\:/Users/35386/Downloads/muhammadfaisal8-attachments/Code_TriTrack_31aug22/Code/app/src/main/res/menu/activity_main_drawer.xml" value="0.15476699444206926" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
