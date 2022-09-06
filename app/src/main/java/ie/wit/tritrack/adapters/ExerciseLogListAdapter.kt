@@ -29,11 +29,15 @@ class ExerciseLogListAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val exerciseModelClass = exerciseModelsList[position]
+        holder.userName.text =
+            "User Name: " + exerciseModelClass.userName
         holder.exerciseType.text =
             "Exercise Type: " + exerciseModelClass.exerciseType
 
         holder.exerciseTime.text =
             "Exercise Time: " + exerciseModelClass.exerciseTime.toString() + " Minutes"
+        holder.exerciseDate.text =
+            "Exercise Date: " + exerciseModelClass.exerciseDate
 
         holder.tvDelete.setTag(position)
         holder.tvEdit.setTag(position)
@@ -62,9 +66,8 @@ class ExerciseLogListAdapter(
                         return@setPositiveButton
                     }
                     val time = timeStr.toInt()
-                    if (time < 1 || time > 60) {
-                        Toast.makeText(context, "Time should be between 1 and 61", Toast.LENGTH_SHORT)
-                            .show()
+                    if (time < 1) {
+                        Toast.makeText(context, "Please enter valid time", Toast.LENGTH_SHORT).show()
                         return@setPositiveButton
                     }
                     exerciseModelsList.get(clickedPosition).exerciseTime = time
@@ -85,8 +88,10 @@ class ExerciseLogListAdapter(
     }
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
+        val userName: TextView = itemView.findViewById(R.id.userName)
         val exerciseType: TextView = itemView.findViewById(R.id.exerciseType)
         val exerciseTime: TextView = itemView.findViewById(R.id.exerciseTime)
+        val exerciseDate: TextView = itemView.findViewById(R.id.exerciseDate)
         val tvEdit: TextView = itemView.findViewById(R.id.tvEdit)
         val tvDelete: TextView = itemView.findViewById(R.id.tvDelete)
     }

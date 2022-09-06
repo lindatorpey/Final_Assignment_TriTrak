@@ -11,7 +11,7 @@ class ExerciseDataBase(context: Context?) : SQLiteOpenHelper(context, DATABASE_N
     override fun onCreate(db: SQLiteDatabase) {
         db.execSQL(
             "Create Table " + EXERCISE_LOG_TABLE + "(" + EXERCISE_ID_COL + " integer primary key autoincrement," +
-                    EXERCISE_TYPE_COL + " text," + EXERCISE_TIME_COL + " integer)"
+                    EXERCISE_TYPE_COL + " text," + EXERCISE_TIME_COL + " integer,"+ USER_NAME_COL + "text," + EXERCISE_DATE_COL + "text, )"
         )
     }
 
@@ -26,6 +26,8 @@ class ExerciseDataBase(context: Context?) : SQLiteOpenHelper(context, DATABASE_N
         var result: Long = 0
         values.put(EXERCISE_TYPE_COL, exerciseModelClass.exerciseType)
         values.put(EXERCISE_TIME_COL, exerciseModelClass.exerciseTime)
+        values.put(USER_NAME_COL, exerciseModelClass.userName)
+        values.put(EXERCISE_DATE_COL, exerciseModelClass.exerciseDate)
         result = db.insert(EXERCISE_LOG_TABLE, null, values)
         db.close()
         return result
@@ -37,6 +39,8 @@ class ExerciseDataBase(context: Context?) : SQLiteOpenHelper(context, DATABASE_N
         var result: Long = 0
         values.put(EXERCISE_TYPE_COL, exerciseModelClass.exerciseType)
         values.put(EXERCISE_TIME_COL, exerciseModelClass.exerciseTime)
+        values.put(USER_NAME_COL, exerciseModelClass.userName)
+        values.put(EXERCISE_DATE_COL, exerciseModelClass.exerciseDate)
         result = db.update(
             EXERCISE_LOG_TABLE,
             values,
@@ -62,6 +66,8 @@ class ExerciseDataBase(context: Context?) : SQLiteOpenHelper(context, DATABASE_N
                 exerciseModelClass.exerciseLogID = itemsCursor.getLong(0)
                 exerciseModelClass.exerciseType = itemsCursor.getString(1)
                 exerciseModelClass.exerciseTime = itemsCursor.getInt(2)
+                exerciseModelClass.userName = itemsCursor.getString(3)
+                exerciseModelClass.exerciseDate = itemsCursor.getString(4)
                 exerciseModels.add(exerciseModelClass)
             }
             itemsCursor.close()
@@ -89,8 +95,10 @@ class ExerciseDataBase(context: Context?) : SQLiteOpenHelper(context, DATABASE_N
         private const val EXERCISE_LOG_TABLE = "exerciseLog"
 
         //columns
+        private const val USER_NAME_COL = "userName"
         private const val EXERCISE_ID_COL = "exerciseID"
         private const val EXERCISE_TYPE_COL = "exerciseType"
         private const val EXERCISE_TIME_COL = "exerciseTime"
+        private const val EXERCISE_DATE_COL = "exerciseDate"
     }
 }
