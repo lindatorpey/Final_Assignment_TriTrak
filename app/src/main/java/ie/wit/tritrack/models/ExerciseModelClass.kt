@@ -7,12 +7,14 @@ class ExerciseModelClass {
     var exerciseTime: Int = 0
     var userName = ""
     var exerciseDate = ""
+    var imagePath = ""
 
     constructor() {}
     constructor(
         exerciseLogID: Long,
         userName: String,
         exerciseDate: String,
+        imagePath: String,
         exerciseType: String,
         exerciseTime: Int,
     ) {
@@ -22,5 +24,6 @@ class ExerciseModelClass {
         this.exerciseTime = exerciseTime
         this.userName = userName
         this.exerciseDate = exerciseDate
+        this.imagePath = imagePath
     }
 }

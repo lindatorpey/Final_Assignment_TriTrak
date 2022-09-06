@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#EEB75A"
     android:padding="5dp">
 
+    <ImageView
+        android:id="@+id/imageExercise"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".3" />
+
     <TextView
         android:id="@+id/userName"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Name"
-        app:layout_constraintBottom_toTopOf="@+id/exerciseType"
-        app:layout_constraintStart_toStartOf="@+id/exerciseType"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466" />
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Name: "
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tvEdit"
+        app:layout_constraintStart_toEndOf="@id/imageExercise"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exerciseType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:padding="5dp"
+        android:text="Type: "
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/exerciseTime"
+        app:layout_constraintStart_toEndOf="@+id/imageExercise"
+        app:layout_constraintEnd_toStartOf="@+id/tvDelete"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <TextView
+        android:id="@+id/exerciseTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        android:text="Time: 0 minutes"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@id/exerciseDate"
+        app:layout_constraintEnd_toStartOf="@+id/tvDelete"
+        app:layout_constraintStart_toEndOf="@+id/imageExercise"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseType" />
 
     <TextView
         android:id="@+id/exerciseDate"
@@ -29,37 +71,8 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvDelete"
-
+        app:layout_constraintStart_toEndOf="@+id/imageExercise"
         app:layout_constraintTop_toBottomOf="@+id/exerciseTime" />
-
-    <TextView
-        android:id="@+id/exerciseType"
-        android:layout_width="336dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="1dp"
-        android:padding="5dp"
-        android:text="Type: "
-        android:textColor="@color/black"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/exerciseTime"
-        app:layout_constraintStart_toStartOf="@+id/exerciseTime"
-        app:layout_constraintTop_toBottomOf="@+id/userName" />
-
-    <TextView
-        android:id="@+id/exerciseTime"
-        android:layout_width="336dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:padding="5dp"
-        android:text="Time: 0 minutes"
-        android:textColor="@color/black"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tvDelete"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exerciseType" />
 
     <TextView
         android:id="@+id/tvEdit"
@@ -68,20 +81,16 @@
         android:padding="5dp"
         android:text="Edit"
         android:textSize="14dp"
-        app:layout_constraintStart_toEndOf="@+id/exerciseType"
-        app:layout_constraintStart_toStartOf="@+id/tvDelete"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/userName" />
 
     <TextView
         android:id="@+id/tvDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
         android:padding="5dp"
         android:text="Delete"
         android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="@+id/exerciseTime"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/exerciseTime" />
+        app:layout_constraintBottom_toBottomOf="@+id/exerciseType"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

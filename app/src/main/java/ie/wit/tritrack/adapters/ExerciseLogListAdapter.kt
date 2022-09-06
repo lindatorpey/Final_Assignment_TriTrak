@@ -7,9 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import ie.wit.tritrack.db.ExerciseDataBase
 import ie.wit.tritrack.models.ExerciseModelClass
 import ie.wit.tritrack.R
@@ -41,6 +43,12 @@ class ExerciseLogListAdapter(
 
         holder.tvDelete.setTag(position)
         holder.tvEdit.setTag(position)
+
+        if (exerciseModelClass.imagePath.isEmpty()) {
+            Glide.with(context).load(R.mipmap.ic_launcher).into(holder.imageExercise)
+        } else {
+            Glide.with(context).load(exerciseModelClass.imagePath).into(holder.imageExercise)
+        }
 
         holder.tvDelete.setOnClickListener {
             val clickedPosition = it.getTag() as Int
@@ -89,6 +97,7 @@ class ExerciseLogListAdapter(
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val userName: TextView = itemView.findViewById(R.id.userName)
+        val imageExercise: ImageView = itemView.findViewById(R.id.imageExercise)
         val exerciseType: TextView = itemView.findViewById(R.id.exerciseType)
         val exerciseTime: TextView = itemView.findViewById(R.id.exerciseTime)
         val exerciseDate: TextView = itemView.findViewById(R.id.exerciseDate)
